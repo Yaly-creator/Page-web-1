@@ -31,12 +31,15 @@ ul {
 body {
     background-color: #1F2039;
 }
-header, footer {
+main, header, footer {
     padding: 20px 50px;
-    background-color: white;
     display: block;
     width: 100%;
     box-sizing: border-box;
+
+}
+header, footer {
+    background-color: white;
 }
 nav {
     display: flex;
