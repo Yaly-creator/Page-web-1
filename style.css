@@ -1,3 +1,5 @@
+
+
 nav a {
     color: #242424;
     text-decoration: none;
@@ -28,25 +30,24 @@ ul {
     font-size: 1em;
     font-family: "Manrope", sans-serif;
 }
-body {
-    background-color: #1F2039;
-}
-main, header, footer {
-    padding: 20px 50px;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
 
-}
-header, footer {
+
+    
+    
+
+
+header, footer{
     background-color: white;
+
 }
 .container {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
     flex-direction: row;
-    justify-content: flex-start;
+    gap: 10px;
 }
 nav img {
     height: 40px;
@@ -57,10 +58,15 @@ p,ul,h2 {
     color:#F9F8FF;
 }
 .cta { 
+    display: inline-block;
+    padding: 16px 32px;
     color: white;
-    font-family: "Manrope", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: linear-gradient(#8E86B5,#ACAEED);
     border-radius: 50px;
+    text-decoration: none;
+    font-size: larger;
+
 }
 .classe_5 {
     padding: 50px;
@@ -79,13 +85,18 @@ header:hover, footer:hover {
 }
 header {
     background-color: white;
+    
 }
 section { 
     padding: 80px;
 }
 .ctr {
-    width: 80%;
+    
     margin: 0 auto;
+    background-color:  #1F2039;
+    padding: 5% 20%;
+    max-width: 1000px;
+    
 }
 
 .marge_1, .marge_2 {
@@ -100,14 +111,146 @@ section {
     
 }
 .container_2{
+    background-color: #1F2039;
+    max-width: 1200px;
+  
+    padding-inline: 200px;
+    
+    display: block;
+    width: 100%;
+    
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    align-items: center; /* optionnel pour aligner verticalement */
-    justify-content: center; /* ou space-between */
+    gap: 0px;
+    align-items: center; /* pour aligner verticalement */
+    justify-content: center; 
+}
+.container_photo{
+    
+    background-color: white;
+    display: flex;
+    justify-content: center;
+   
+    flex-wrap: wrap;
+    margin-top: 0;          /* annule l'espace vers le haut */
+    padding-top: 0;         /* idem */
+    
+    
+   
+}
+.photo_1{
+    order: 1;
+    
+}
+.photo_2{
+    order: 2;
+    
+}
+.pied{
+    display: flex;
+    gap: 10%;
+    flex-direction: row-reverse;
+    justify-content:space-between; 
+    padding-top: 10px;
+    padding-inline: 20px;
+}
+.liens{
+    display: flex;
+    gap: 10px;
+}
+.portfolio{
+    background-color:#1F2039;
+    width: 100%;
+}
+.icone {
+    display: flex;
+    gap: 10px;
+}
+.portfolio-section-photos {
+  background-color: white;
 }
 
+.portfolio-section-photos h2 {
+  color: #242424;
+  margin-bottom: 80px;
+}
 
+.grid-paysages img, .grid-portraits img {
+  width: 100%;
+  height: 100%;
+  /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
+  object-fit: cover;
+}
+.paysage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+} 
+.paysage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* très important pour éviter les déformations */
+  display: block; /* évite l’espace blanc en bas de l’image */
+}
+.portrait{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+}
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* très important pour éviter les déformations */
+  display: block; /* évite l’espace blanc en bas de l’image */
+}
+.lien-conteneur-photo {
+  position: relative;
+  display: block;
+}
 
+.photo-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.lien-conteneur-photo:hover .photo-hover {
+  display: flex;
+}
+.projet {
+    margin-bottom: 0;       /* empêche l'espacement vers le bas */
+    padding-bottom: 0;      /* idem */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:larger;
     
-
+}
+table{
+    color: white;
+    border-collapse: collapse;
+}
+td,th {
+    border: 1px solid #A5B4FC;
+    
+    padding: 20px 50px;
+    text-align: center;
+    
+}
+caption {
+    margin-bottom: 50px;
+    
+}
