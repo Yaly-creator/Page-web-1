@@ -254,3 +254,33 @@ caption {
     margin-bottom: 50px;
     
 }
+.section-contact h2 {
+  color: #a5b4fc;
+  padding-bottom: 30px;
+  
+  
+}
+.section-contact{
+    background-color: #1F2039;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    color: white;
+}
+formulaire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box.champ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    
+}
