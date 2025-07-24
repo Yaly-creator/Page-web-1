@@ -272,15 +272,70 @@ label{
 }
 formulaire{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
 
 }
 .box.champ{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
+    
+}
+.ligne{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    
+    
+}
+.champ {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
 
+
+
+.message .box.champ {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.box.envoie{
+    margin-top: 20px;
+    text-align: center;
     
-    
+
+}
+button[type="submit"] {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(#8E86B5, #ACAEED);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+button[type="submit"]:hover {
+    transform: scale(1.05);
+    background: linear-gradient(#7b74aa, #9a9fe0);
+}
+
+.box.champ.message{
+    padding-top: 20px;
+}
+html {
+  overflow-x: hidden;
 }
