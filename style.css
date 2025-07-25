@@ -117,7 +117,7 @@ section {
     padding-inline: 200px;
     
     display: block;
-    width: 100%;
+    max-width: 1000px;
     
     display: flex;
     flex-direction: row;
@@ -270,11 +270,16 @@ caption {
 label{
     color: white;
 }
-formulaire{
+form{
+
+    max-width: 1000px;
+}
+.formulaire{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    max-width: 1000px;
 
 }
 .box.champ{
@@ -339,3 +344,124 @@ button[type="submit"]:hover {
 html {
   overflow-x: hidden;
 }
+@media screen and (max-width: 1200px) {
+h1,h2 {
+    font-size: 2em;
+}
+table {
+    display: none;
+}
+    
+}
+
+@media screen and (max-width:996px) {
+.container_2,
+.box.txt,
+.box.image,
+.container_photo,
+.box.photo_1,
+.box.photo_2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.box.txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.box.image {
+  display: flex;
+  justify-content: center;
+}
+
+.container_photo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.box.photo_1,
+.box.photo_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+
+
+.ligne {
+    flex-direction: column;
+}
+.container_2,
+.box.txt,
+.box.image,
+.container_photo,
+.box.photo_1,
+.box.photo_2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.box.txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.box.image {
+  display: flex;
+  justify-content: center;
+}
+
+.container_photo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.box.photo_1,
+.box.photo_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+  .container_2 {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .box.txt,
+  .box.image {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .ctr h1 {
+    text-align: center;
+    padding-bottom: 0px;
+  }
+
+}
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+    
+
