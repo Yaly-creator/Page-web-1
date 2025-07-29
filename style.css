@@ -110,21 +110,14 @@ section {
     order: 2;
     
 }
-.container_2{
-    background-color: #1F2039;
-    max-width: 1200px;
-  
-    padding-inline: 200px;
-    
-    display: block;
-    max-width: 1000px;
-    
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: center; /* pour aligner verticalement */
-    justify-content: center; 
+.container_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f1b3a; /* violet foncé */
+  padding: 60px 40px;
 }
+
 .container_photo{
     
     background-color: white;
